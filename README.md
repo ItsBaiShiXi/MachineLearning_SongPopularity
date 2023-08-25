@@ -9,10 +9,11 @@ different attributes. We hope this project can help people understand how a song
 is calculated on Spotify, and hopefully improve a song's popularity based on some of the 
 attributes.
 
-#Imputation
-Imputation can be done to numberic features where the missing data can be replaced 
-with mean or median of the non missing data values from that section.
-Another Imputation can be done by removing the row or column if there is a lot of missing data values.
+#Imputation:
+
+Imputation can be done to numeric features where the missing data can be replaced 
+with the mean or median of the non-missing data values from that section.
+Another Imputation can be done by removing the row or column if there are a lot of missing data values.
 
 #Normalization vs standardization
 
