@@ -24,7 +24,7 @@ Another Imputation can be done by removing the row or column if there are a lot 
 # Data Exploration
 The original data contains a total of 35 features and 10k data. After inspecting the data, we kept 22 features and removed the rest of the features(Track URI, Album URI, Artist URI...) due to irreverence.
 
-Remaining Features: Track Name, Artist Name(s), Album Name, Album Artist Name(s), Album Release Date, Explicit, Added By, Added At, Artist Genres, Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, Time Signature
+Remaining Features: Track Name, Artist Name(s), Album Name, Album Artist Name(s), Album Release Date, Explicit, Added By, Added At, Artist Genres, Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, Time Signature, Album Genres(data are empty for this field)
 
 Target Feature: Popularity
 
@@ -35,3 +35,7 @@ Album Release Date: This is often relevant, as the release date can affect a son
 Explicit: This indicates whether a song contains explicit content, which may affect its audience and popularity.
 
 Popularity: Target, scale from 0-100
+
+Artist Genres: These can be relevant, as the genre of a song or album can influence its popularity.
+
+Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, Time Signature: These audio features (from Spotify's audio analysis) can be highly relevant to popularity, as they describe the musical characteristics of a song.
