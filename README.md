@@ -9,33 +9,31 @@ different attributes. We hope this project can help people understand how a song
 is calculated on Spotify, and hopefully improve a song's popularity based on some of the 
 attributes.
 
-#Imputation:
+# Data Preprocessing
 
-Imputation can be done to numeric features where the missing data can be replaced 
-with the mean or median of the non-missing data values from that section.
-Another Imputation can be done by removing the row or column if there are a lot of missing data values.
+**Imputation:**
 
-#Normalization vs standardization
+For numerical values, we will replace the missing values with the random values within the scope. For non-numerical values, we will use different strategies based on different features. Some possible strategies are removing the observation(missing too many attributes), replacing it with the most common value in that feature, and introducing a new category called "Unknown"...
 
-Normalization would scale a certain value of a feature to be in specific range between 0 and 1 which in the Spotify
-data, it cna help bring some of the features in a common range. 
-While in standardization, it would be used to center the data near 0 to ensure the features to be similar scales. 
-It can ensure the data would have a mean of 0 and have a standar deviation.  
+**Data Scaling**
 
-#Data Encoding
+For the random forest models, it is usually not important to scale the data. However, Tempo is significantly greater than all the other numerical values, which I will apply normalization on it.
 
-One-hot encoding can be applied to columns like "Genre" ann conver them into binary columns if data genre
-exist in the row then assgin it as 1 otherwise assign it to be 0. 
+**Data Encoding**
+
+We will likely use one-hot encoding for most of the categorical data since the categories are 
+mostly independent of each other.
+One exception is artist genres, which include multiple values for each observation. We 
+will use one-hot encoding for each unique genre present in the dataset.
 
 
-#Data transformation
+**Data transformation**
 
-Data transformation that can be used would be normaliztion such that the data that have different scales can be unified. 
-Another transformation would standarization where it can set feastures, "Loudness", "Popularity", and others with a
-common mean of 0 and a standard deviation of 1.  
+Not necessary for the random forest model.
 
 
 # Data Exploration
+
 The original data contains a total of 35 features and 10k data. After inspecting the data, we kept 22 features and removed the rest of the features(Track URI, Album URI, Artist URI...) due to irreverence.
 
 Remaining Features: Track Name, Artist Name(s), Album Name, Album Artist Name(s), Album Release Date, Explicit, Added By, Added At, Artist Genres, Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, Time Signature, Album Genres(data are empty for this field)
@@ -52,4 +50,4 @@ Popularity: Target, scale from 0-100
 
 Artist Genres: These can be relevant, as the genre of a song can influence its popularity.
 
-Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, Time Signature: These audio features (from Spotify's audio analysis) can be highly relevant to popularity, as they describe the musical characteristics of a song.
+Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, and Time Signature: These audio features (from Spotify's audio analysis) can be highly relevant to popularity, as they describe the musical characteristics of a song.
