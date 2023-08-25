@@ -13,7 +13,7 @@ attributes.
 
 Imputation can be done to numberic features where the missing data can be replaced 
 with mean or median of the non missing data values from that section.
-Another Imputation can be done by removing the row or column if there is a lot of missing data values.
+Another Imputation can be done by removing the row or column if there are a lot of missing data values.
 
 #Normalization vs standardization
 
