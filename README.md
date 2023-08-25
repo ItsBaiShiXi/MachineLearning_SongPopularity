@@ -35,5 +35,3 @@ Album Release Date: This is often relevant, as the release date can affect a son
 Explicit: This indicates whether a song contains explicit content, which may affect its audience and popularity.
 
 Popularity: Target, scale from 0-100
-
-Target Feature: Popularity
