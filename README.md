@@ -11,7 +11,7 @@ attributes.
 
 # Model to Be Utilized
 
-Random Forest Model
+**Random Forest Model**
 
 # Data Preprocessing
 
