@@ -9,6 +9,10 @@ different attributes. We hope this project can help people understand how a song
 is calculated on Spotify, and hopefully improve a song's popularity based on some of the 
 attributes.
 
+# Model to Be Utilized
+
+Random Forest Model
+
 # Data Preprocessing
 
 **Imputation:**
