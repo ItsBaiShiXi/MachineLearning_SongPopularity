@@ -8,3 +8,11 @@ MachienLearning_SongPopularity is designed to predict a song's popularity based 
 different attributes. We hope this project can help people understand how a song's popularity 
 is calculated on Spotify, and hopefully improve a song's popularity based on some of the 
 attributes.
+
+#Imputation
+
+#Normalization vs standardization
+
+#Data Encoding
+
+#Data transformation
