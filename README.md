@@ -13,6 +13,15 @@ attributes.
 
 **Random Forest Model**
 
+**Polynomial Regression**
+
+By using polynomial regression, we can model the relationship between the independent variables and the popularity of the songs. This helps us to identify the factors that are important for song popularity and to help us make predictions about the popuarity of the songs. Additional preprocessing is converting the dataframe imported using pandas to numpy arrays and data should be reshaped, so the data can be used to be split into train, test and validate. Use the sets to build a model and refine it's accuracy.
+
+**K-means Clustering**
+
+We can use K-means clustering which is unsupervied learning. We felt K-means clustering a good model which can be used to predict the data since there are multiple features which need to be modeled to predict the popularity of the song. The additional data preprocessing required to remove all the labels from the data since unsupervised learning does not need labelled data. We are still really sure about this because we haven't gone through unsupervised learning a lot in class.
+
+
 # Data Preprocessing
 
 **Imputation:**
@@ -55,12 +64,3 @@ Popularity: Target, scale from 0-100
 Artist Genres: These can be relevant, as the genre of a song can influence its popularity.
 
 Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, and Time Signature: These audio features (from Spotify's audio analysis) can be highly relevant to popularity, as they describe the musical characteristics of a song.
-
-**Polynomial Regression**
-
-By using polynomial regression, we can model the relationship between the independent variables and the popularity of the songs. This helps us to identify the factors that are important for song popularity and to help us make predictions about the popuarity of the songs. Additional preprocessing is converting the dataframe imported using pandas to numpy arrays and data should be reshaped, so the data can be used to be split into train, test and validate. Use the sets to build a model and refine it's accuracy.
-
-**K-means Clustering**
-
-We can use K-means clustering which is unsupervied learning. We felt K-means clustering a good model which can be used to predict the data since there are multiple features which need to be modeled to predict the popularity of the song. The additional data preprocessing required to remove all the labels from the data since unsupervised learning does not need labelled data.
-
