@@ -55,3 +55,11 @@ Popularity: Target, scale from 0-100
 Artist Genres: These can be relevant, as the genre of a song can influence its popularity.
 
 Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, and Time Signature: These audio features (from Spotify's audio analysis) can be highly relevant to popularity, as they describe the musical characteristics of a song.
+
+**Polynomial Regression**
+
+By using polynomial regression, we can model the relationship between the independent variables and the popularity of the songs. This helps us to identify the factors that are important for song popularity and to help us make predictions about the popuarity of the songs.
+
+
+
+
