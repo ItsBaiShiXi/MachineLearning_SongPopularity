@@ -34,10 +34,9 @@ For the random forest models, it is usually not important to scale the data. How
 
 **Data Encoding**
 
-We will likely use one-hot encoding for most of the categorical data since the categories are 
-mostly independent of each other.
-One exception is artist genres, which include multiple values for each observation. We 
-will use one-hot encoding for each unique genre present in the dataset.
+For the Random Forest model, we are using Label Encoding for Artist Name(s) and Album Artist Name(s) instead of One Hot Encoing since 
+One Hot Encoding would take more than 7000 columns while Label Encoding would take less. Further more some data columns would be removed 
+so the model would perform better. 
 
 
 **Data transformation**
