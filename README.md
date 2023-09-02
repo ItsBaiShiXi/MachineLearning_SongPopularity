@@ -68,9 +68,11 @@ Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrument
 
 In this method, we split the data into 5 categories, 0 ~ 4 represent 0 ~ 20, 21 ~ 40, 41 ~ 60, 61~ 80, 81 ~ 100. We tend to use this model to predict which categories will the value fall in because we think this is more reasonable than using the model to predict the exact value.
 
-For encoding the date, we use lable encoding instead of One Hot encoding, since there will be more than 700 columns if we use One Hot enocding. 
+For encoding the date, we use lable encoding instead of One Hot encoding, since there will be more than 7000 columns if we use One Hot enocding. 
 
 # Divide Data into Train and Test for Random Forest model
 
+We set our X to be rfdf.drop(['Popularity'] and y to be our target: Popularity in the test-train ratio of 20 : 80. 
 
-
+# Build Random Forest model and train
+We use RandomForestClassifier as our estimatetor. After training our first model, we can get accuracy of 33.7 and our Confusion Matrix. 
