@@ -63,3 +63,14 @@ Popularity: Target, scale from 0-100
 Artist Genres: These can be relevant, as the genre of a song can influence its popularity.
 
 Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, and Time Signature: These audio features (from Spotify's audio analysis) can be highly relevant to popularity, as they describe the musical characteristics of a song.
+
+# Data Encoding for Random Forest Model
+
+In this method, we split the data into 5 categories, 0 ~ 4 represent 0 ~ 20, 21 ~ 40, 41 ~ 60, 61~ 80, 81 ~ 100. We tend to use this model to predict which categories will the value fall in because we think this is more reasonable than using the model to predict the exact value.
+
+For encoding the date, we use lable encoding instead of One Hot encoding, since there will be more than 700 columns if we use One Hot enocding. 
+
+# Divide Data into Train and Test for Random Forest model
+
+
+
