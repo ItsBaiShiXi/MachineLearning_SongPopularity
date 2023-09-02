@@ -13,13 +13,17 @@ attributes.
 
 **Random Forest Model**
 
+Random Forest is chosen for its capability to handle both numerical and categorical features, making it a versatile choice for this dataset.
+Encoding: Label Encoding is used for 'Artist Name(s)' and 'Album Artist Name(s)' instead of One-Hot Encoding for efficiency reasons. Label Encoding is chosen for these features, as One-Hot Encoding would result in an excessive number of columns. Certain data columns were removed to improve model performance after encoding.
+Objective: The Random Forest model is employed to classify songs into five popularity categories ('0-20', '21-40', '41-60', '61-80', '81-100') based on the provided features.
+
 **Polynomial Regression**
 
-By using polynomial regression, we can model the relationship between the independent variables and the popularity of the songs. This helps us to identify the factors that are important for song popularity and to help us make predictions about the popuarity of the songs. Additional preprocessing is converting the dataframe imported using pandas to numpy arrays and data should be reshaped, so the data can be used to be split into train, test and validate. Use the sets to build a model and refine it's accuracy.
+By using polynomial regression, we can model the relationship between the independent variables and the popularity of the songs. This helps us to identify the factors that are important for song popularity and to help us make predictions about the popularity of the songs. Additional preprocessing is converting the dataframe imported using pandas to numpy arrays and data should be reshaped, so the data can be used to be split into train, test and validate. Use the sets to build a model and refine its accuracy.
 
 **K-means Clustering**
 
-We can use K-means clustering which is unsupervied learning. We felt K-means clustering a good model which can be used to predict the data since there are multiple features which need to be modeled to predict the popularity of the song. The additional data preprocessing required to remove all the labels from the data since unsupervised learning does not need labelled data. We are still really sure about this because we haven't gone through unsupervised learning a lot in class.
+We can use K-means clustering which is unsupervised learning. We felt K-means clustering is a good model that can be used to predict the data since there are multiple features that need to be modeled to predict the popularity of the song. The additional data preprocessing is required to remove all the labels from the data since unsupervised learning does not need labeled data. We are still really sure about this because we haven't gone through unsupervised learning a lot in class.
 
 
 # Data Preprocessing
@@ -30,12 +34,12 @@ For numerical values, we will replace the missing values with the random values 
 
 **Data Scaling**
 
-For the random forest models, it is usually not important to scale the data. However, Tempo is significantly greater than all the other numerical values, which I will apply normalization on it.
+For the random forest models, it is usually not important to scale the data. However, Tempo is significantly greater than all the other numerical values, which I will apply normalization to it.
 
 **Data Encoding**
 
-For the Random Forest model, we are using Label Encoding for Artist Name(s) and Album Artist Name(s) instead of One Hot Encoing since 
-One Hot Encoding would take more than 7000 columns while Label Encoding would take less. Further more some data columns would be removed 
+For the Random Forest model, we are using Label Encoding for Artist Name(s) and Album Artist Name(s) instead of One Hot Encoding since 
+One Hot Encoding would take more than 7000 columns while Label Encoding would take less. Furthermore, some data columns would be removed 
 so the model would perform better. 
 
 
@@ -66,13 +70,9 @@ Danceability, Energy, Key, Loudness, Mode, Speechiness, Acousticness, Instrument
 
 # Data Encoding for Random Forest Model
 
-In this method, we split the data into 5 categories, 0 ~ 4 represent 0 ~ 20, 21 ~ 40, 41 ~ 60, 61~ 80, 81 ~ 100. We tend to use this model to predict which categories will the value fall in because we think this is more reasonable than using the model to predict the exact value.
+In this method, we split the data into 5 categories, 0 ~ 4 represents 0 ~ 20, 21 ~ 40, 41 ~ 60, 61 ~ 80, and 81 ~ 100. We tend to use this model to predict which categories will the value fall into because we think this is more reasonable than using the model to predict the exact value.
 
-For encoding the date, we use lable encoding instead of One Hot encoding, since there will be more than 7000 columns if we use One Hot enocding. 
+For encoding the date, we use label encoding instead of One Hot encoding, since there will be more than 7000 columns if we use One Hot encoding. 
 
-# Divide Data into Train and Test for Random Forest model
-
-We set our X to be rfdf.drop(['Popularity'] and y to be our target: Popularity in the test-train ratio of 20 : 80. 
-
-# Build Random Forest model and train
-We use RandomForestClassifier as our estimatetor. After training our first model, we can get accuracy of 33.7 and our Confusion Matrix. 
+# Build the Basic Random Forest Model
+We use RandomForestClassifier as our estimatetor. The train-test ratio is 80:20. After training our first model, we can get a training score of 99% and a test score of 33%. Since there is a large gap between training and testing scores, the current model falls into the overfitting issue.
