@@ -195,4 +195,4 @@ Start with Name: Title: Contribution. If the person contributed nothing then jus
 - Collaborated with ShengZhe and Huanlong on first version of Random Forest Model
 - Work on the first version of ReadMe
 - Worked on the first version of Decision Tree/ SVM ReadMe
-- Fix on Final version of ReadMe
+- Fix and upload final version of ReadMe
