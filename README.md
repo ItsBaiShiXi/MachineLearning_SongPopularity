@@ -83,9 +83,9 @@ For numerical values, we will replace the missing values with the random values 
 
 For encoding, we used the same encoding as the first version of our Random Forest Model which was label encoding.
 
-We use DecisionTreeClassifier as our estimator. The train-test ratio is 80:20. After trainning the model, the training accuracy resulted
-in 99% while the test accuracy resulted in 29%. Comaparing the two accuracies, the training accuracy is much higher whhich would 
-reult in overfit but also would mean the model have a difficult time in generalizing. 
+We use DecisionTreeClassifier as our estimator. The train-test ratio is 80:20. After training the model, the training accuracy resulted
+in 99% while the test accuracy resulted in 29%. Comparing the two accuracies, the training accuracy is much higher which would 
+result in overfit but also would mean the model has a difficult time in generalizing. 
 
-In addition, we created a SVM model to futher test the data. This was done with SVC classififer as the estimator. The data is then scaled 
-with StandardScaler and transform using fitting scaler to ensure they are in the same scale. After training the model, the training accuracy resulted in 44% while the test accruacy resulted in 36%. The gap between trainin and testing is much lower than Decision Tree Model but it could potentially cause an overfit since training accuracy is higher than testing accuracy.
+In addition, we created an SVM model to further test the data. This was done with the SVC classifier as the estimator. The data is then scaled 
+with StandardScaler and transformed using a fitting scaler to ensure they are in the same scale. After training the model, the training accuracy resulted in 44% while the test accruacy resulted in 36%. The gap between training and testing is much lower than the Decision Tree Model but it could potentially cause an overfit since training accuracy is higher than testing accuracy.
