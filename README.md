@@ -145,16 +145,13 @@ Feature Engineering: Our approach to feature engineering was relatively straight
       a. Feature Selection: Conduct more thorough feature selection to identify the most influential factors affecting song popularity. 
       This could involve advanced feature selection techniques or domain-specific knowledge.
       
-      b. Enhanced Encoding: Experiment with advanced encoding techniques, such as one-hot encoding or target encoding, 
-      to capture the nuances of categorical data more effectively.
-      
-      c. Model Ensemble: Explore ensemble techniques to combine the strengths of multiple models,
+      b. Model Ensemble: Explore ensemble techniques to combine the strengths of multiple models,
       potentially improving predictive accuracy.
       
-      d. Fairness and Bias Analysis: Dive deeper into fairness and bias analysis to ensure that our model's predictions are equitable
+      c. Fairness and Bias Analysis: Dive deeper into fairness and bias analysis to ensure that our model's predictions are equitable
       and not influenced by demographic or genre-related factors.
       
-      e. User Engagement Metrics: Expand the scope by incorporating user engagement metrics, such as user reviews and streaming counts, 
+      d. User Engagement Metrics: Expand the scope by incorporating user engagement metrics, such as user reviews and streaming counts, 
       to enhance prediction accuracy and provide a more holistic view of song popularity
       
       
