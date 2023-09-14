@@ -1,9 +1,9 @@
 
-# A complete Introduction
+# Introduction
 
   In an era defined by the ever-increasing volume of data generated daily, the field of machine learning stands at the forefront of transforming this data deluge into actionable insights. This project embarks on a journey into the realm of machine learning, with a focus on predicting the popularity of songs. The fascination with music is a universal language that transcends borders, cultures, and generations. Understanding what makes a song popular has long been a subject of intrigue and curiosity.
-# A completed write that includes the following
-A. Introduction of your project. Why chosen? why is it cool? General/Broader impact of having a good predictive mode. i.e. why is this important?
+  
+**A. Introduction of your project. Why chosen? why is it cool? General/Broader impact of having a good predictive mode. i.e. why is this important?**
 
 - The choice of predicting song popularity stems from a profound interest in the intersection of data science and the arts. Music, a form of artistic expression, can often defy conventional analysis due to its subjective nature. However, the power of data and machine learning offers an opportunity to decipher some of the underlying patterns that contribute to a song's popularity. By undertaking this project, we aim to unravel the intricate web of features and factors that influence a song's reception by its audience.
     
@@ -12,7 +12,8 @@ A. Introduction of your project. Why chosen? why is it cool? General/Broader imp
 - The broader impact of building a good predictive model for song popularity extends beyond mere entertainment. The music industry, with its immense economic and cultural significance, can greatly benefit from such predictive models. Artists and producers can make informed decisions about songwriting, production, and marketing strategies. Music streaming platforms can enhance user recommendations, leading to more personalized and enjoyable music experiences for their listeners. This project offers a glimpse into the potential for data-driven decision-making within the creative domain, highlighting the broader implications of machine learning in various industries.
 
 
-B. Methods section (this section will include the exploration results, preprocessing steps, models chosen in the order they were executed. Parameters chosen. Please make sub-sections for every step. i.e Data Exploration, Preprocessing, Model 1, Model 2, (note models can be the same i.e. CNN but different versions of it if they are distinct enough). You can put links here to notebooks and/or code blocks using three ` in markup for displaying code. so it would look like this: ``` MY CODE BLOCK ```
+**Methods section** 
+(this section will include the exploration results, preprocessing steps, models chosen in the order they were executed. Parameters chosen. Please make sub-sections for every step. i.e **Data Exploration, Preprocessing, Model 1, Model 2**, (note models can be the same i.e. CNN but different versions of it if they are distinct enough). You can put links here to notebooks and/or code blocks using three ` in markup for displaying code. so it would look like this: ``` MY CODE BLOCK ```
 Note: A methods section does not include any why. the reason why will be in the discussion section. This is just a summary of your methods.
 
 # Methods
