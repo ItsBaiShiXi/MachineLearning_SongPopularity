@@ -76,3 +76,16 @@ For encoding the date, we use label encoding instead of One Hot encoding, since 
 
 # Build the Basic Random Forest Model
 We use RandomForestClassifier as our estimatetor. The train-test ratio is 80:20. After training our first model, we can get a training score of 99% and a test score of 33%. Since there is a large gap between training and testing scores, the current model falls into the overfitting issue.
+
+# Build the Decision Tree Model/SVM Model
+
+For numerical values, we will replace the missing values with the random values within the scope. For non-numerical values, we will use different strategies based on different features. Some possible strategies are removing the observation(missing too many attributes), replacing it with the most common value in that feature, and introducing a new category called "Unknown"...
+
+For encoding, we used the same encoding as the first version of our Random Forest Model which was label encoding.
+
+We use DecisionTreeClassifier as our estimator. The train-test ratio is 80:20. After trainning the model, the training accuracy resulted
+in 99% while the test accuracy resulted in 29%. Comaparing the two accuracies, the training accuracy is much higher whhich would 
+reult in overfit but also would mean the model have a difficult time in generalizing. 
+
+In addition, we created a SVM model to futher test the data. This was done with SVC classififer as the estimator. The data is then scaled 
+with StandardScaler and transform using fitting scaler to ensure they are in the same scale. After training the model, the training accuracy resulted in 44% while the test accruacy resulted in 36%. The gap between trainin and testing is much lower than Decision Tree Model but it could potentially cause an overfit since training accuracy is higher than testing accuracy.
