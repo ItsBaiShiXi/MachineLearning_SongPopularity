@@ -80,17 +80,20 @@ best_rf = grid_search.best_estimator_
 ```
 This structured Methods section provides a concise summary of the steps involved in your project, from data exploration and preprocessing to model selection and hyperparameter tuning. For more detailed information and code blocks, please refer to the corresponding notebooks or code files.
 
-**C. Results section:** This will include the results from the methods listed above (C). You will have figures here about your results as well.
+**C. Results section:** 
+
+This will include the results from the methods listed above (C). You will have figures here about your results as well.
 No exploration of results is done here. This is mainly just a summary of your results. The sub-sections will be the same as the sections in your methods section.
-- 1.
-- 2.
-- 3.
-- 4.
 
+- 1. ![74e9f4f0-660e-445b-a35c-6950b280910c](https://github.com/ItsBaiShiXi/MachineLearning_SongPopularity/assets/134015247/86b0b083-8f2b-4471-baaa-f92543cdb9cb)
 
+- 2. ![f976605e-e258-48fd-a726-5e701705a66c](https://github.com/ItsBaiShiXi/MachineLearning_SongPopularity/assets/134015247/a89c6ca4-c51c-4c89-b1c3-14b7776dbd48)
 
+- 3. ![88b9c6e0-2e25-42ec-8083-be9beb4d6dd8](https://github.com/ItsBaiShiXi/MachineLearning_SongPopularity/assets/134015247/27842063-8e4a-44a0-8359-976fec1aa585)
 
+- 4. ![2cce643c-acce-43f6-b6d4-b6fd1a2b4c0f](https://github.com/ItsBaiShiXi/MachineLearning_SongPopularity/assets/134015247/ab5d8f3a-e841-49c4-be7d-ef9f7c65fe82)
 
+  
 **D. Discussion section:** This is where you will discuss the why, and your interpretation and your thought process from beginning to end. This will mimic the sections you have created in your methods section as well as new sections you feel you need to create. You can also discuss how believable your results are at each step. You can discuss any shortcomings. It's ok to criticize as this shows your intellectual merit, as to how you are thinking about things scientifically and how you are able to correctly scrutinize things and find shortcomings. In science we never really find the perfect solution, especially since we know something will probably come up in the future (i.e. donkeys) and mess everything up. If you do it's probably a unicorn or the data and model you chose are just perfect for each other!
 
 **A) 1. Data Exploration**
@@ -135,6 +138,7 @@ Feature Engineering: Our approach to feature engineering was relatively straight
         Achieving the right balance between accuracy and interpretability is a continuous challenge.
         
   **B. Future Directions**
+  
   *1:* Looking ahead, we envision several exciting future directions for this project:
   
       a. Feature Selection: Conduct more thorough feature selection to identify the most influential factors affecting song popularity. 
